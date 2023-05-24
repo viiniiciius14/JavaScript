@@ -1,2 +1,3 @@
 # JavaScript
- Programas feitos para praticar e aperfeiçoar habilidades em programar em javascript.
+ Programas feitos para praticar e aperfeiçoar minhas habilidades em javascript.
+
