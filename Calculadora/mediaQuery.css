@@ -1,0 +1,39 @@
+@media only screen and (min-width: 490px) and (max-width: 768px) {
+    .wrapper{
+        width: 450px;
+        height: 600px;
+        padding: 30px 30px;
+    }
+    .calc-button {
+        flex-basis: 75px;
+        height: 65px;
+    }
+    .double{
+        flex-basis: 47%;
+    }
+    .triple{
+        flex-basis: 73%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .wrapper{
+        width: 450px;
+        max-width: 500px;
+        height: 600px;
+        max-height: 600px;
+        padding: 30px 30px;
+    }
+    .calc-button {
+        flex-basis: 75px;
+        height: 65px;
+    }
+    .double{
+        flex-basis: 47%;
+    }
+    .triple{
+        flex-basis: 73%;
+    }
+}
+

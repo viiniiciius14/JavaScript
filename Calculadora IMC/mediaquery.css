@@ -1,0 +1,9 @@
+@media screen and (min-width: 728px){
+    #inputs{
+        width: 600px;
+        height: 360px;
+    }
+    #resultado{
+        width: 600px;
+    }
+}

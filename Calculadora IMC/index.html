@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <section id="inputs">
+            <div id="imc">
+                <img src="icons8-peso-64.png" alt="Imagem Balança">
+                <h1>Calculadora IMC</h1>
+            </div>
+            <div class="div_inputs">
+                <input type="number" id="peso" class="input" autocomplete="off" placeholder="Peso">
+            </div>
+            <div class="div_inputs">
+                <input type="number" id="altura" class="input" autocomplete="off" placeholder="Altura">
+            </div>
+            <div class="div_inputs">
+                <input type="text" id="nome" class="input" autocomplete="off" placeholder="Nome">
+            </div>
+            <div id="buttons">
+                <button id="btn_resultado" onclick="calcular()" value="Calcular">CALCULAR</button>
+                <button id="reset" onclick="reset()" value="reset"><i class='bx bx-sm bx-refresh' id="refresh_icon"></i></button>
+            </div>
+        </section>
+        <section id="resultado">
+            <h2 id="text">resultado</h2>
+            <h3 id="dica">dica</h3>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

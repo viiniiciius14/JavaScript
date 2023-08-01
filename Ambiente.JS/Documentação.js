@@ -54,7 +54,6 @@ console.log(multi(5,5));
 
 
 //----------------Day/2---------------------//
-
 /*
 //Day 2 - Variaveis em javascript e a diferença entre elas(var, let, const), escopo e hoisting. (9/5/23)
 
@@ -132,4 +131,33 @@ const quad = getMulti(4);
 
 console.log(double(40));
 // neste expemplo temos uma função que recebe o parametro do numero que ira multiplicar e dentro desta função temos uma função que recebe o numero que será multiplicado, e em seguida temos 3 variaveis que recebe o parametro para dobrar, triplicar e quadriplicar o parametro(numero) que terá no parametro numero(onde recebe o valor para ser multiplicado)  e isso é um exemplo do que é high order function que diferente do primeiro ele não multiplica apenas por um valor.
+
+----------------------//------------------------
+
+// Cronograma e Topicos a ser estudados ou se aprofundar.
+
+Medium => {
+   | Escopos de variáveis |: Aprofunde-se nos conceitos de escopo global e escopo local, bem como nas diferenças entre as palavras-chave let, const e var na declaração de variáveis. |=> 
+
+   | Operadores lógicos |: Estude com mais detalhes os operadores && (AND) e || (OR), e como eles são usados para avaliar condições lógicas. =>
+
+   |Estruturas de repetição |: Aprofunde-se nas estruturas de repetição, como for, while e do-while, e entenda como elas podem ser usadas para executar blocos de código várias vezes. |=> 
+
+   | Manipulação de arrays |: Explore mais recursos de manipulação de arrays, como adicionar, remover e modificar elementos, bem como métodos como map, filter e reduce. |=> 
+
+   | Objetos |: Aprofunde-se nos conceitos de objetos em JavaScript, aprendendo sobre propriedades, métodos, criação de objetos, acesso a propriedades e iteração por objetos. |=>
+
+   | Funções |: Estude diferentes formas de criar funções, como funções com parâmetros, funções de retorno e funções de seta (arrow functions). Aprenda também sobre escopo de variáveis dentro das funções. |=> 
+
+   | Manipulação do DOM |: Aprofunde-se na manipulação do Document Object Model (DOM) para interagir com elementos HTML, alterar estilos, criar e remover elementos dinamicamente e lidar com eventos. |=> 
+
+   | Manipulação de strings |: Explore métodos para manipulação de strings, como concatenação, substituição, separação e pesquisa de substrings. |=> 
+
+   | Tratamento de eventos |: Estude diferentes tipos de eventos, como eventos de clique, eventos de mouse, eventos de teclado, entre outros, e aprenda a lidar com eles usando event listeners. |=>
+}
+
+Avançado => {
+   Conceitos avançados: Aprofunde-se em conceitos mais avançados, como closures, promises, async/await, módulos e manipulação de erros. |=>
+} 
+
 */
