@@ -128,8 +128,45 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    
-    
 });
+
+//Carrinho 
+function openCart(){
+    const cart = document.getElementById('cart');
+    cart.style.display = 'block'
+    setTimeout(() => {
+        cart.style.transition = 'all .2s ease-in-out'
+        cart.style.right = '0'
+    }, 200)
+}
+function closeCart(){
+    const btnClose_cart = document.getElementById('cart');
+    cart.style.right = '-1000';
+    setTimeout(() => {
+        cart.style.transition = 'all .2s ease-in-out'
+        btnClose_cart.style.display = 'none';
+    }, 200)
+}
+
+
+let cardapioAtivo = 'produto_salgado';
+function identificarCard(btnClicado) {
+    const idClicado = btnClicado;
+
+    const cardapioAtual = document.getElementById(cardapioAtivo);
+    cardapioAtual.classList.remove('fade-in');
+    cardapioAtual.classList.add('fade-out');
+    
+    setTimeout(() => {
+        cardapioAtual.style.display = 'none';
+        cardapioAtual.classList.remove('fade-out');
+        const cardapioNovo = document.getElementById(idClicado);
+        cardapioNovo.style.display = 'flex';
+        cardapioNovo.classList.add('fade-in')
+
+        cardapioAtivo = idClicado;
+    }, 300)
+
+}
 
 

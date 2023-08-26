@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleEats | Cardapio</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <script src="script/script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="imagens/cart-regular-24.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -17,12 +17,60 @@
             <h1>Simple<span>Eats</span></h1>
         </div>
         <nav>
-            <button><i class='bx bx-cart'></i></button>
-            <a href="#">Cardapio</a>
-            <a href="#">Contato</a>
+            <button id="btnCart" onclick="openCart()"><i class='bx bx-cart'></i></button>
+            <a href="#arrowIcon">Cardapio</a>
+            <a href="#sociais">Contato</a>
         </nav>
     </header>
     <main>
+        <div id="cart">
+            <div id="produtos_cart">
+                <div id="legendaCarrinho">
+                    <h3>CARRINHO</h3>
+                    <button id="closeCart" onclick="closeCart()">X</button>
+                </div>
+                <div id="produto1_cart">
+                    <div class="detalhes_produto">
+                        <img src="imagens/Salgados/Carbonara.jpg" alt="" class="imgProduto_cart">
+                        <div class="dados_produto">
+                            <div class="name_produto"><p>CARBONARA</p></div>
+                            <div class="quantidade_produto">
+                                <p>Unidades:</p>
+                                <input type="number" min="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valorP"><p>R$55</p></div>
+                    <button class="removerProduto" onclick="removerItem()">X</button>
+                </div>
+                <div id="produto2_cart">
+                    <div class="detalhes_produto">
+                        <img src="imagens/Salgados/Capelete.jpg" alt="" class="imgProduto_cart">
+                        <div class="dados_produto">
+                            <div class="name_produto"><p>CAPELETE</p></div>
+                            <div class="quantidade_produto">
+                                <p>Unidades:</p>
+                                <input type="number" min="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valorP"><p>R$42.90</p></div>
+                    <button class="removerProduto" onclick="removerItem()">X</button>
+                </div>
+            </div>
+            <div id="valor">
+                <div id="input_cupom">
+                    <input type="text" maxlength="10" placeholder="CUPOM">
+                </div>
+                <div id="resultCompra">
+                   <h3>Total</h3>
+                   <h2>R$97.90</h2>
+                </div>
+            </div>
+            <div id="checkout">
+                <button id="btn_checkout" onclick="checkout()">FINALIZAR</button>
+            </div>
+        </div>
        <article id="presentation">
         <div><img src="imagens/Chef-bro.png" alt="Chef"></div>
         <div id="msg_welcome">
@@ -35,10 +83,10 @@
             <i class='bx bx-chevron-down'></i>
         </div>
         <div id="menu_cardapio">
-            <button class="btn_menu" id="btn_pratosPrincipais">Pratos Principais</button>
-            <button class="btn_menu" id="btn_sobremesas">Sobremesas</button>
-            <button class="btn_menu" id="btn_bebidas">Bebidas</button>
-        </div>
+            <button class="btn_menu" id="btn_pratosPrincipais" onclick="identificarCard('produto_salgado')">Pratos Principais</button>
+            <button class="btn_menu" id="btn_sobremesas" onclick="identificarCard('produto_doce')">Sobremesas</button>
+            <button class="btn_menu" id="btn_bebidas" onclick="identificarCard('produto_bebidas')">Bebidas</button>
+        </div> 
        <article id="cardapio">
         <section id="produto_salgado">
             <div class="card_produtos">
@@ -185,7 +233,7 @@
             </div>
             <div class="card_produtos">
                 <img src="imagens/Bebidas/Drink Citrico.jpg" alt="" class="img_produtos">
-                <div class="dados_produtos"> 
+                <div class="dados_produtos">
                     <p>Comida</p>
                     <h3>$99,99</h3>
                     <button class="button_buy">Comprar</button>
@@ -224,5 +272,6 @@
             </div>
         </a>
     </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>

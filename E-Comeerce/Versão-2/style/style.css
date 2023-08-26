@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+:root {
+    --font-h1: 'Poppins', sans-serif;
+    --font-p:Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif, Courier, monospace;
+    --color_1: #060922;
+    --color_2: #141867;
+    --color_3: #fafafa;
+    --color_4: #fff;
+    --color_5: #87CEEB;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+body {
+    height: auto;
+    width: 100%;
+}
+
+/*CABEÇALHO*/
+header {
+    background-color: #0000001a;
+    height: 240px;
+    color: var(--color_3);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    background-image: url(/E-Comeerce/imagens/pexels-pixabay-326281.jpg);
+    background-size: cover;
+    background-position:40%;
+    background-attachment: fixed;
+    transition: .2s ease-in-out;
+}
+#logo_header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: var(--font-h1);
+    width: 250px;
+    gap: 5px;
+    padding: 15px;
+}
+#logo_header >h1{
+    font-size: 22px;
+}
+#logo_header i {
+    color: var(--color_5);
+}
+
+/*MAIN-CONTEUDO*/
+#about--element{
+    background-color: var(--color_3);
+}
+.infos{
+    color: #000;
+    height: 320px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color_3);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+.infos >h1{
+    font-family: var(--font-h1);
+    border-bottom: var(--color_5) solid 1px;
+    width: 150px;
+    font-weight: 600;
+    color: var(--color_1);
+    font-size: 21px;
+}
+.infos >h2{
+    font-family: var(--font-p);
+    font-size: 15px;
+    font-weight: 500;
+}
+.infos >h4{
+    font-family: var(--font-p);
+    font-size: 14px;
+}/*SOBRE*/
+
+.order--element{
+    height: 300px;
+    width: 100%;
+    background-color: transparent;
+    background-image: url(/E-Comeerce/imagens/pexels-jane-doan-892649.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;
+}
+#cont--order{
+    height: 300px;
+    max-width: 50%;
+    background-color: var(--color_4);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+    letter-spacing: 1px;
+}
+#cont--order >h1{
+    font-family: var(--font-h1);
+    border-bottom: var(--color_5) solid 1px;
+    width: 110px;
+    font-weight: 600;
+    color: var(--color_1);
+    font-size: 21px;
+}
+#cont--order >h2{
+    font-family: var(--font-p);
+    font-size: 15px;
+    font-weight: 500;
+}
+#cont--order >a{
+    font-family: var(--font-h1);
+    width: 115px;
+    padding: 7px;
+    color: var(--color_4);
+    background-color: var(--color_1);
+    font-size: 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+}
+#cont--order >:hover{
+    background-color: var(--color_5);
+    transition: all .2s ease-in-out;
+}/*INFO - Pedido*/
+
+#cont--horarios{
+    height: 300px;
+    max-width: 50%;
+    background-color: var(--color_4);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+#cont--horarios >h1{
+    font-family: var(--font-h1);
+    border-bottom: var(--color_5) solid 1px;
+    width: 110px;
+    font-weight: 600;
+    color: var(--color_1);
+    font-size: 21px;
+}
+#cont--horarios >h2{
+    font-family: var(--font-p);
+    font-size: 15px;
+    font-weight: 500;
+}/*INFO - Horarios*/
+
+#social--element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    width: 100%;
+    background-color: var(--color_3);
+}
+#social--element >h1{
+    font-family: var(--font-h1);
+    border-bottom: var(--color_5) solid 1px;
+    width: 220px;
+    font-weight: 600;
+    color: var(--color_1);
+    font-size: 21px;
+    text-align: center;
+}
+#midias--sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#midias--sociais >i{
+    font-size: 30px !important;
+    color: var(--color_1) !important;
+    cursor: pointer;
+}/*Redes Sociais*/
+
+/*RODAPÉ*/
+footer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: var(--color_1);
+}
+footer i {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+}
+#socias{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#logo_footer {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-h1);
+    font-size: 13px;
+    color: #fff;
+    behavior: "smooth";
+}
+#logo_footer >h1{
+    font-size: 22px;
+}
+#logo_footer i{
+    font-size: 25px !important;
+    color: var(--color_5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Efeitos Scroll*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*SCROLL SUAVE PARA LINK INTERNO*
+
+window.scroll({
+    top: 400;
+    behavior: "smooth";
+});
